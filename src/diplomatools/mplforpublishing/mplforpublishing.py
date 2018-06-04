@@ -199,7 +199,7 @@ def savepdf(name=None, fig=None):
         plt.savefig(fname_pdf)
     else:
         # fig.tight_layout(.5)  # does not work with fig bc of python bug
-        fig.tight_layout()
+        fig.tight_layout(pad=1/2)
         fig.savefig(fname_pdf)
     #plt.savefig(fname_eps)
     #os.system("epstopdf '{0}' && rm '{0}'".format(fname_eps))
